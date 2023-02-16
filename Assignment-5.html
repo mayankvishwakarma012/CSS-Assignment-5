@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- Main container -->
+    <div class="container">
+        <!-- navbar -->
+        <div class="navbar">
+            <div class="nav-link" id="navbar">
+                <a href="#"><i class="fa-solid fa-robot"></i></a>
+                <a href="#">Home</a>
+                <a href="#">pages</a>
+                <a href="#">About us</a>
+                <a href="#">Contact us</a>
+                <a href="#" class="bar" onclick="navShow()"><i class="fa-solid fa-bars"></i></a>
+
+            </div>
+        </div>
+        <!-- content box text on left side  -->
+        <div class="content-ltr">
+            <div class="content-box-ltr">
+                <div class="content-text">
+                    <h1>What is Lorem Ipsum?</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                        specimen book.
+                    </p>
+                    <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+                        recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                    <button>Learn more <span><i class="fa-solid fa-angles-right"></i></span>  </button>
+                </div>
+                <div class="content-img">
+                    <img src="image-2.jpg" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+        <!-- content box text on right side -->
+        <div class="content-rtl">
+            <div class="content-box-rtl">
+                <div class="content-text">
+                    <h1>What is Lorem Ipsum?</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                        specimen book.
+                    </p>
+                    <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+                        recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                    <button>Learn more <span><i class="fa-solid fa-angles-right"></i></span> </button>
+                </div>
+                <div class="content-img">
+                    <img src="image-1.jpg" alt="" srcset="">
+                </div>
+            </div>
+
+        </div>
+
+        <!-- card layout -->
+        <div class="card-box">
+            <div class="row">
+                <div class="column">
+                    <div class="card" id="card-1">
+                        <i class="fa-solid fa-music"></i>
+                        <h3>Music </h3>
+                        <p>It is a long established fact that a reader will be distracted by the readable content</p>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="card" id="card-2">
+                        <i class="fa-solid fa-download"></i>
+                        <h3>Download </h3>
+                        <p>It is a long established fact that a reader will be distracted by the readable content</p>
+                    </div>
+                </div>
+
+
+                <div class="column">
+                    <div class="card" id="card-3">
+                        <i class="fa-solid fa-camera"></i>
+                        <h3>Pictures </h3>
+                        <p>It is a long established fact that a reader will be distracted by the readable content</p>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="card" id="card-4">
+                        <i class="fa-solid fa-wifi"></i>
+                        <h3>Connect </h3>
+                        <p>It is a long established fact that a reader will be distracted by the readable content</p>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="card" id="card-5">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <h3>Location </h3>
+                        <p>It is a long established fact that a reader will be distracted by the readable content</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer  -->
+        <div class="footer">
+            <div class="row">
+                <div class="social col">
+                    <ul>
+                        <p><i class="fa-brands fa-github"></i></p>
+                        <p> &copy 2017-2022 </p>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h1>Features</h1>
+                    <ul>
+                        <li>Cool stuff</li>
+                        <li>Random feature</li>
+                        <li>team feature</li>
+                        <li>stuff for developers</li>
+                        <li>Another one </li>
+                        <li>Last time </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h1>Resource</h1>
+                    <ul>
+                        <li>Resource</li>
+                        <li>Resource name</li>
+                        <li>Another Resource</li>
+                        <li>Final Resource</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h1>About</h1>
+                    <ul>
+                        <li>Team</li>
+                        <li>Location</li>
+                        <li>privacy</li>
+                        <li>terms</li>
+                    </ul>
+                </div>
+
+
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- function for navigation button  -->
+    <script>
+        function navShow() {
+            var x = document.getElementById("navbar");
+            if (x.className === "nav-link") {
+                x.className += " responsive-nav";
+            } else {
+                x.className = "nav-link";
+            }
+        }
+    </script>
+</body>
+
+</html>

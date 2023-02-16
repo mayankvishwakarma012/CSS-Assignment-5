@@ -1,0 +1,509 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Main container */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+/* navigation bar */
+
+.navbar {
+    background-color: black;
+    padding: 10px 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* navigation bar link  */
+
+.nav-link {
+    margin: 0 10%;
+}
+
+.nav-link a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+}
+
+.nav-link a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+
+.nav-link a.bar {
+    display: none;
+}
+
+
+/* navigation bar end  */
+
+
+/* content-box for image  */
+
+.content-img {
+    margin: auto 0;
+}
+
+.content-img img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+/* hover peroperties for image */
+
+.content-img img:hover {
+    transition: trasform 2s;
+    animation: box-shadow 2s infinite;
+}
+
+
+/* content-box text-box on left-side  */
+
+.content-ltr {
+    background-color: #ddf0ff;
+    color: black;
+}
+
+.content-box-ltr {
+    margin: 0 10%;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.content-box-ltr .content-text {
+    display: block;
+    width: 65%;
+    padding-right: 30px;
+}
+
+.content-box-ltr .content-text h1 {
+    margin: 0;
+}
+
+
+/* content-box button color-blue*/
+
+.content-ltr button {
+    padding: 10px 15px 10px 10px;
+    background-color: #1095ff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.content-ltr button:hover {
+    background-color: #0780e0;
+}
+
+.content-ltr button span {
+    display: none;
+}
+
+.content-ltr button:hover span {
+    display: inline;
+}
+
+
+/* content box l to r end  */
+
+
+/* content-box text-box on right-side  */
+
+.content-rtl {
+    background-color: #68edb6;
+    color: black;
+}
+
+.content-box-rtl {
+    margin: 0 10%;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    ;
+}
+
+.content-box-rtl .content-text {
+    display: block;
+    width: 65%;
+    padding-left: 30px;
+}
+
+.content-box-rtl .content-text h1 {
+    margin: 0;
+}
+
+
+/* content-box button color-green*/
+
+.content-rtl button {
+    padding: 10px 15px 10px 10px;
+    background-color: #00bc6e;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.content-rtl button:hover {
+    background-color: #019558;
+}
+
+.content-rtl button span {
+    display: none;
+}
+
+.content-rtl button:hover span {
+    display: inline;
+}
+
+
+/* content box r to l end */
+
+
+/* card-box for cards 1x5 */
+
+.card-box {
+    display: block;
+    padding: 20px 30px;
+    width: auto;
+}
+
+
+/* card-box-row */
+
+.card-box .row {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    width: auto;
+    margin: 15px 12%;
+    padding: 1px;
+}
+
+
+/* card-box column */
+
+.card-box .column {
+    width: 25vh;
+    padding: 20px 0px;
+    margin: 2px;
+}
+
+
+/* card formating */
+
+.card-box .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    border-radius: 10px;
+    width: auto;
+    height: auto;
+}
+
+
+/* different background and icon for each card */
+
+#card-1 i {
+    padding: 16px;
+    text-align: center;
+    border: 1px solid #f1f1f1;
+    color: #ff4cf5;
+    border-radius: 50%;
+}
+
+#card-2 i {
+    padding: 16px;
+    text-align: center;
+    border: 1px solid #f1f1f1;
+    color: #009f7b;
+    border-radius: 50%;
+}
+
+#card-3 i {
+    padding: 16px;
+    text-align: center;
+    border: 1px solid #f1f1f1;
+    color: #ffc31b;
+    border-radius: 50%;
+}
+
+#card-4 i {
+    padding: 16px;
+    text-align: center;
+    border: 1px solid #f1f1f1;
+    color: #4c8aff;
+    border-radius: 50%;
+}
+
+#card-5 i {
+    padding: 16px;
+    text-align: center;
+    border: 1px solid #f1f1f1;
+    color: #515151;
+    border-radius: 50%;
+}
+
+
+/* hover for each card and icon*/
+
+#card-1:hover {
+    color: white;
+    background-color: #ff4cf5;
+    animation: card-zoom .8s linear 1;
+}
+
+#card-1:hover i {
+    color: #ff4cf5;
+    background-color: white;
+    animation: icon-rotate .8s linear 1;
+}
+
+#card-2:hover {
+    color: white;
+    background-color: #009f7b;
+    animation: card-zoom .8s linear 1;
+}
+
+#card-2:hover i {
+    color: #009f7b;
+    background-color: white;
+    animation: icon-rotate .8s linear 1;
+}
+
+#card-3:hover {
+    color: white;
+    background-color: #ffc31b;
+    animation: card-zoom .8s linear 1;
+}
+
+#card-3:hover i {
+    color: #ffc31b;
+    background-color: white;
+    animation: icon-rotate .8s linear 1;
+}
+
+#card-4:hover {
+    color: white;
+    background-color: #4c8aff;
+    animation: card-zoom .8s linear 1;
+}
+
+#card-4:hover i {
+    color: #4c8aff;
+    background-color: white;
+    animation: icon-rotate .8s linear 1;
+}
+
+#card-5:hover {
+    color: white;
+    background-color: #515151;
+}
+
+#card-5:hover i {
+    color: #515151;
+    background-color: white;
+    animation: icon-rotate .8s linear 1;
+}
+
+
+/* card end */
+
+
+/* footer-box */
+
+.footer {
+    width: auto;
+    position: relative;
+    padding: 30px 10px;
+    height: auto;
+    background-color: #515151;
+}
+
+
+/* footer row */
+
+.footer .row {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: 0 15%;
+}
+
+
+/* footer column */
+
+.footer .social {
+    color: #ffffff;
+    font-size: 14px;
+    font-family: inherit;
+    font-weight: normal;
+    padding: 5px 0px 5px 0px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.footer .col {
+    width: 20%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 0px 20px 20px 20px;
+}
+
+.footer .col h1 {
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+    font-size: 12px;
+    line-height: 17px;
+    padding: 20px 0px 5px 0px;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.250em;
+}
+
+.footer .col ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer .col ul li {
+    color: #999999;
+    font-size: 14px;
+    font-family: inherit;
+    font-weight: normal;
+    padding: 5px 0px 5px 0px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.footer .col ul li:hover {
+    color: #ffffff;
+    transition: .1s;
+}
+
+
+/* clear float after footer */
+
+.clearfix {
+    clear: both;
+}
+
+
+/* animation added */
+
+
+/* animation for image */
+
+@keyframes box-shadow {
+    0% {
+        transform: scale(1.01);
+        box-shadow: 5px 5px 3px #515151;
+    }
+    100% {
+        transform: scale(1.01);
+        box-shadow: 10px 10px 8px #515151;
+    }
+}
+
+
+/* animation for cards */
+
+@keyframes card-zoom {
+    0% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+
+/* animation for icons */
+
+@keyframes icon-rotate {
+    0% {
+        transform: rotate(90deg);
+    }
+    25% {
+        transform: rotate(180deg);
+    }
+    50% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* animation end */
+
+
+/* mobile view responsive design */
+
+@media screen and (max-width: 600px) {
+    .navbar a:not(:first-child) {
+        display: none;
+    }
+    .navbar a.bar {
+        float: right;
+        display: block;
+    }
+    .navbar .responsive-nav a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .navbar .responsive-nav a.bar {
+        float: left;
+    }
+    .content-box-ltr,
+    .content-box-rtl {
+        flex-direction: column-reverse;
+        margin: 0 2vh;
+    }
+    .content-box-ltr .content-text,
+    .content-box-rtl .content-text {
+        padding: 15px 0px;
+        width: 100%;
+    }
+    .card-box {
+        padding: 30px 0;
+    }
+    .card-box .column {
+        display: block;
+        justify-self: center;
+        padding: 10px 0;
+        width: 100%;
+    }
+    .card-box .card {
+        width: 90%;
+    }
+    .footer {
+        padding: 0;
+    }
+    .footer .col {
+        width: 100%;
+    }
+}
